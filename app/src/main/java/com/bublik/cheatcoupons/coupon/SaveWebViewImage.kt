@@ -17,7 +17,7 @@ class SaveWebViewImage(
 
     private val maxFileIndex = 99
     private val fileName = "coupon"
-    private val fileFormat = "pdf"
+    private val fileFormat = "png"
 
     override fun doInBackground(vararg params: WebView?): SaveFileResult {
         try {
@@ -35,7 +35,7 @@ class SaveWebViewImage(
                 exceptionData = e.message
             )
         } catch (e: Exception) {
-            Log.e("AsyncTaskError", "Can't save pdf", e)
+            Log.e("AsyncTaskError", "Can't save $fileFormat", e)
             return SaveFileResult(
                 exceptionCode = SaveFileResult.ExceptionCode.OTHER,
                 exceptionData = e.message
@@ -63,7 +63,7 @@ class SaveWebViewImage(
             throw IOException("Documents directory does not exist: ${outputDirectory.path}")
         }
 
-        val outputFile = outputDirectory.resolve("coupon.png")
+        val outputFile = outputDirectory.resolve("coupon.$fileFormat")
 
         return if (outputFile.exists()) {
             findUniqueName(outputDirectory)
