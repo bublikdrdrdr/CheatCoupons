@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Cheat Coupons</string>
+
+    <string name="mcdonalds">McDonalds</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="ice_cream">Ice cream</string>
+    <string name="search">Search</string>
+    <string name="nothing_here">nothing_here</string>
+    <string name="item_picture">item picture</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="pdf_viewer_title">PDF Viewer</string>
+    <string name="save_as_pdf">Save as PDF</string>
+    <string name="setup">Setup</string>
+    <string name="date">Date</string>
+    <string name="code">Code</string>
+    <string name="save_pdf_permission_required">Permission is required to save PDF</string>
+    <string name="save_pdf_successful">PDF saved at %1$s</string>
+    <string name="save_file_exists">All file names from 1 to %1$s are used, are you serious?</string>
+    <string name="save_file_io">Can\'t write file: %1$s</string>
+    <string name="save_file_other">Unexpected error occurred: %1$s</string>
+    <string name="web_view_info">Impossible to save image when content can\'t fit on screen</string>
+    <string name="why">why??</string>
+    <string name="web_view_info_explain">Because there is no NORMAL html to pdf rendering android libraries</string>
+    <string name="so">so..?</string>
+    <string name="web_view_into_explain_2">Application just takes screenshot of this coupon ¯\\_(ツ)_/¯</string>
+    <string name="ah_ok">aha.. OK</string>
+    <string name="web_view_into_explain_3">I know, it\'s clever and stupid simultaneously</string>
+    <string name="easter_egg">Yey, you\'ve found an easter egg! Or you just looked at source code -_-. Anyway, app created by bublik.drdrdr (VB)</string>
+</resources>

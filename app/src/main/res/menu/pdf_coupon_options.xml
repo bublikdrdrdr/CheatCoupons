@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/saveAsPdf"
+        android:icon="@drawable/toolbar_save"
+        android:title="@string/save_as_pdf"
+        app:showAsAction="ifRoom" />
+<!--    <item-->
+<!--        android:id="@+id/share"-->
+<!--        android:icon="@drawable/toolbar_share"-->
+<!--        android:title="@string/share"-->
+<!--        app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/setup"
+        android:icon="@drawable/toolbar_edit"
+        android:title="@string/setup"
+        app:showAsAction="ifRoom" />
+</menu>

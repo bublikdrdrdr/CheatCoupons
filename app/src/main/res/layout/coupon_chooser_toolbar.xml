@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bublik.cheatcoupons.chooser.CouponChooserToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/selectCouponToolbar"
+    style="@style/Widget.MaterialComponents.AppBarLayout.Primary"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/colorPrimary"
+    app:contentInsetEnd="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/controls"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/titleButton"
+                style="@style/AppTheme.ToolbarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:icon="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/pathDivider"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/nothing_here"
+                android:paddingTop="21dp"
+                android:paddingBottom="19dp"
+                android:src="@drawable/toolbar_path_divider" />
+
+            <Button
+                android:id="@+id/categoryButton"
+                style="@style/AppTheme.ToolbarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:icon="@mipmap/ic_launcher"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/searchField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:hint="@string/search"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/search"
+            android:padding="0dp"
+            android:src="@drawable/toolbar_search_icon" />
+    </LinearLayout>
+
+</com.bublik.cheatcoupons.chooser.CouponChooserToolbar>
